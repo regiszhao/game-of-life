@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#canvas {
+    border: 1px solid red;
+    display: block;
+    margin: 0 auto;
+}
+
+.banner {
+    position: relative;
+    border: 1px solid red;
+    padding: 0;
+    width: 90vw;
+    margin: 30px auto;
+}
+
+.mainHeader {
+    display: inline-block;
+    margin: 0;
+    margin-right: 100px;
+    border: 1px solid green;
+    font-size: 30px;
+}
+
+.dimOptions {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    list-style-type: none;
+    border: 1px solid green;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.dimOptions > li {
+    display: inline-block;
+    border: 1px solid red;
+    margin-left: 10px;
+}

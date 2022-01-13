@@ -5,9 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="gol.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="banner">
+        <h1 class="mainHeader">Conway's Game of Life</h1>
+        <ul class="dimOptions">
+            <li>2D</li>
+            <li>3D</li>
+        </ul>
+    </div> 
+    <div>
+        <canvas id='canvas'></canvas>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <button id="gameButton" onclick="gameButtonHandler()">Start</button>
+            </li>
+            <li>
+                <button onclick="runGame()">Next</button>
+            </li>
+            <li>
+                <button onclick="clearGrid()">Clear</button>
+            </li>
+        </ul>
+    </div>
+    <script src="gol.js"></script>
 </body>
 </html>
