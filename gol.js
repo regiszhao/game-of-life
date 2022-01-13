@@ -103,6 +103,7 @@ gridSetup = [[5,5], [5,6], [5,7], [6,7], [7, 6]]
 let numCols, numRows;
 let cellSize;
 let canvasWidth, canvasHeight;
+let speed;
 let refreshIntervalId;
 
 const canvas = document.getElementById('canvas');
@@ -111,6 +112,7 @@ const ctx = canvas.getContext('2d');
 numCols = 70;
 numRows = 30;
 cellSize = 20;
+speed = 300;
 
 canvasWidth = numCols * cellSize;
 canvasHeight = numRows * cellSize;
@@ -162,7 +164,7 @@ function runGame() {
 function gameButtonHandler() {
     let buttonState = document.getElementById('gameButton').textContent;
     if (buttonState == 'Start') {
-        refreshIntervalId = setInterval(runGame, 500);
+        refreshIntervalId = setInterval(runGame, speed);
         document.getElementById('gameButton').textContent = 'Stop';
     } 
     else {
